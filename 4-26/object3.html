@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var obj = {}
+    Object.defineProperty(obj,"sex",{
+        value:"Male",      //属性的值
+        configurable:true,  //属性是否可以被delete删除
+        writable:true,      //属性是否可被修改
+        enumerable:true,    //属性是否可被枚举
+    })
+
+    Object.defineProperty(obj,"age",{
+        value:11,
+        enumerable:false,  //或true
+        configurable:true,
+        writable:true
+    })
+    obj.email="zhangsan@qq.com"
+    console.log(obj)
+
+    //delete
+    delete obj.age
+    console.log("delete age 之后",obj)
+    //枚举
+    for(k in obj){
+        console.log(k)
+    }
+    obj.sex="Female"
+    obj.age=88
+    console.log(obj)
+
+
+    // console.log(Object,keys(obj))
+</script>
+</body>
+</html>

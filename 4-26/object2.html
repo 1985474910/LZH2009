@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var obj={
+        name:"zhangsan",
+        age:11,
+        sex:"M",
+    }
+
+    //想obj中添加一个属性 email
+    obj.email="1985474910@qq.com"
+
+    //删除obj对象中的age属性
+    delete obj.age
+    console.log(obj)
+
+
+    //对象的枚举  for in
+    for(k in obj){
+        console.log(k,obj[k])
+    }
+
+    // var obj1=new Object();
+    // Object.defineProperty(obj1,"name",)
+</script>
+</body>
+</html>

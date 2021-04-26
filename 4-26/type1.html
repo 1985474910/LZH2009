@@ -1,10 +1,53 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Title</title>
 </head>
 <body>
-$END$
+<script>
+    //获取数据类型
+    // var abc = 123;
+    var abc ='djnvj'
+    console.log(typeof abc);
+
+    var arr = [11,22,33,44];
+    console.log(arr)
+
+    // 通过下标（索引） 访问数组元素
+    console.log(arr[0])//11
+    console.log(arr[3])//44
+
+    // 获取数组的长度
+    console.log(arr.length)
+    console.log(arr[arr.length-1])
+
+    // 数组的遍历
+    arr.forEach(function (v,k) {
+        console.log(k,v)
+    })
+
+    // 在数组尾部  压入 | 删除
+    arr.push(55)
+    console.log(arr)
+
+    arr.pop();
+    console.log(arr)
+
+    // 在数组头部  压入 | 删除
+    arr.unshift(999)
+    console.log(arr)
+
+    arr.shift()
+    console.log(arr)
+
+    // 数组排序
+    arr.sort()
+    console.log(arr)
+
+    arr.splice(0,2)
+    console.log(arr)
+</script>
 </body>
 </html>
